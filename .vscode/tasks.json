@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build OpenCV",  // 任务名称，需与launch.json的preLaunchTask一致
+      "type": "shell",          // 类型为shell，让Shell处理命令替换
+      "command": "bash",        // 使用bash执行命令
+      "args": [
+        "-c",                   // 执行字符串形式的命令
+        "g++ ${file} -o ${fileDirname}/${fileBasenameNoExtension} $(pkg-config --cflags --libs opencv4)"  // 完整编译命令
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true       // 设置为默认编译任务（Ctrl+Shift+B直接运行）
+      },
+      "problemMatcher": ["$gcc"]  // 匹配GCC错误信息
+    }
+  ]
+}
