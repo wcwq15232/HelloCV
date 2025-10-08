@@ -15,6 +15,7 @@ int main() {
 	imshow("image", img);
 
 	waitKey(0);
+	
 
 }
 
