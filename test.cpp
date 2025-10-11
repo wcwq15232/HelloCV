@@ -3,20 +3,32 @@
 #include <opencv2/imgproc.hpp>
 #include <iostream>
 
-using namespace cv;
-using namespace std;
 
 int main() {
-	Mat img(512, 512, CV_8UC3, Scalar(255, 255, 255));
+    // 打开摄像头
+    cv::VideoCapture cap(0);
+    if (!cap.isOpened()) return -1;
 
-	circle(img, Point(256, 256), 155, Scalar(0, 69, 255), -1);
+    cv::Mat frame;
+	cv::Mat canny;
+	cv::Mat blur;
 
-	rectangle(img, Point(130, 226), Point(382, 286), Scalar(255, 255, 255), -1);
-	imshow("image", img);
+    while (true) {
+        // 读取一帧
+        cap >> frame;
+        if (frame.empty()) break;
 
-	waitKey(0);
-	
+		cv::blur(frame, blur, cv::Size(3,3));
+        cv::Canny(blur, canny, 40,100);
+        cv::imshow("Camera Feed", canny);
 
+        // 按下 ESC 键退出
+        if (cv::waitKey(30) == 27) break;
+    }
+
+    // 释放摄像头并关闭窗口
+    cap.release();
+    cv::destroyAllWindows();
+
+    return 0;
 }
-
-
