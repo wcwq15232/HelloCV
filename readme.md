@@ -1,12 +1,14 @@
-语雀文档地址
-目前只有文档一有内容
+语雀文档
 
-文档1 [https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/gv6y7g8eiy43w5gv?singleDoc#](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/gv6y7g8eiy43w5gv?singleDoc#) 
+[cmake study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/go4n0p3gpvwskk15)
 
-文档2 [https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/xxq9e69lgq0xhv8x?singleDoc#](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/xxq9e69lgq0xhv8x?singleDoc#) 
+[docker study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/uqfeicvpl0a4vrgq)
+
+[GIT study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/xxq9e69lgq0xhv8x?singleDoc#) 
+
+[opencv ros2 环境配置](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/gv6y7g8eiy43w5gv?singleDoc#)
+
+开发系统环境`Ubuntu22.04.5` `OpenCV4.5` `ros2桌面版` `cmake 3.22.1`
 
 
-开发系统环境Ubuntu22.04.5
-OpenCV4.6
-Ros2 通过鱼香ros安装
 

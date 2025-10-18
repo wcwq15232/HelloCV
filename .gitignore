@@ -2,3 +2,5 @@ gitsettings/
 test
 Resources/
 study/
+*/build
+.vscode/
