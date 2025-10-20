@@ -15,6 +15,8 @@ enum class Crypto_type { CAESAR, XOR };
 enum class Crypto_status { ENCRYPT, DECRYPT };
 
 extern map<char, int> HEX2D;
+extern map<int, char> D2HEX;
+union CharSplit;
 
 class Crypto {
 private:
