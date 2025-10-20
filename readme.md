@@ -2,6 +2,8 @@
 
 [cmake study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/go4n0p3gpvwskk15)
 
+[实践任务](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/go4n0p3gpvwskk15)
+
 [docker study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/uqfeicvpl0a4vrgq)
 
 [GIT study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/xxq9e69lgq0xhv8x?singleDoc#) 
