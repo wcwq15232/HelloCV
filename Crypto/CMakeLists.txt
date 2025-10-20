@@ -11,16 +11,16 @@ add_library(crypto_tool
 target_include_directories(crypto_tool PUBLIC include/)
 target_compile_options(crypto_tool PRIVATE -O2 -Wall)
 
-add_executable(main src/main.cpp)
+add_executable(CryptoTool src/main.cpp)
 
-target_compile_options(main PRIVATE -O2 -Wall)
-target_link_libraries(main PRIVATE crypto_tool)
+target_compile_options(CryptoTool PRIVATE -O2 -Wall)
+target_link_libraries(CryptoTool PRIVATE crypto_tool)
 
 
 
 set(CMAKE_INSTALL_PREFIX /home/test/camke_test)
 
-install(TARGETS main DESTINATION bin/)
+install(TARGETS CryptoTool DESTINATION bin/)
 install(TARGETS crypto_tool DESTINATION lib/)
 
 install(FILES "src/Crypto_tool.cpp" DESTINATION "src/")
