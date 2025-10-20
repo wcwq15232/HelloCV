@@ -2,7 +2,7 @@
 
 [cmake study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/go4n0p3gpvwskk15)
 
-[实践任务](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/go4n0p3gpvwskk15)
+[实践任务](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/dv03zgw4ynsuoraq?singleDoc#)
 
 [docker study](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/uqfeicvpl0a4vrgq)
 
