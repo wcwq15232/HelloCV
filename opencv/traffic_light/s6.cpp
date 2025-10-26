@@ -42,7 +42,7 @@ vector<Scalar> BGR {{255, 0, 0}, {0, 255, 0}, {0, 0, 255}};
 map<string, int> map_{{"blue", 0}, {"green", 1}, {"red", 2}};
 
 int main(){
-    string path = "../../Resources/TrafficLight.mp4", objType;
+    string path = "TrafficLight.mp4", objType;
     VideoCapture cap(path);
 
     // double fps = cap.get(CAP_PROP_FPS);
