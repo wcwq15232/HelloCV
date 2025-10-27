@@ -28,7 +28,7 @@ bool getContours(Mat& imgDil, Mat& img){
             result = true;
             float peri = arcLength(contours[i], true);
             approxPolyDP(contours[i], conPoly[i], 0.03 * peri, true);
-            drawContours(img, conPoly, i, Scalar(0, 0, 255), 2, LINE_4);
+            // drawContours(img, conPoly, i, Scalar(0, 0, 255), 2, LINE_4);
             cout << contours[i].size() << endl;
             boundRect[i] = boundingRect(conPoly[i]);
             rectangle(img, boundRect[i].tl(), boundRect[i].br(), Scalar(0, 255, 0), 2);
@@ -45,9 +45,9 @@ int main(){
     string path = "TrafficLight.mp4", objType;
     VideoCapture cap(path);
 
-    // double fps = cap.get(CAP_PROP_FPS);
-    // Size frameSize(cap.get(CAP_PROP_FRAME_WIDTH), cap.get(CAP_PROP_FRAME_HEIGHT));
-    // VideoWriter writer("output_f.mp4", VideoWriter::fourcc('M', 'P', '4', 'V'), fps, frameSize);
+    double fps = cap.get(CAP_PROP_FPS);
+    Size frameSize(cap.get(CAP_PROP_FRAME_WIDTH), cap.get(CAP_PROP_FRAME_HEIGHT));
+    VideoWriter writer("output_f.mp4", VideoWriter::fourcc('M', 'P', '4', 'V'), fps, frameSize);
 
     Mat frame, frame_src;
     Mat imgHSV;
@@ -80,11 +80,11 @@ int main(){
 
         if (!objType.empty()) putText(frame_src, objType, Point(20, 110), FONT_HERSHEY_DUPLEX, 5, BGR[map_[objType]], 7);
 
-        imshow("src", frame_src);
-        re = waitKey(60);
-        // writer.write(frame_src);
+        // imshow("src", frame_src);
+        // re = waitKey(60);
+        writer.write(frame_src);
     }
     cap.release();
-    // writer.release();
+    writer.release();
     destroyAllWindows();
 }
