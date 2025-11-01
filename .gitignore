@@ -2,6 +2,8 @@ gitsettings/
 test
 Resources/
 study/
-*/build
+**/build/
+**/install/
+**/log/
 .vscode/
-
+ros2/.ycm_extra_conf.py

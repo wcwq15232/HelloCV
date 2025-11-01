@@ -18,7 +18,7 @@
 
 开发系统环境`Ubuntu22.04.5` `OpenCV4.5` `ros2桌面版` `cmake 3.22.1`
 
-## _CryptoTool _使用
+## CryptoTool使用
 ```cpp
 git clone https://github.com/wcwq15232/HelloCV
 cd HelloCV/Crypto
