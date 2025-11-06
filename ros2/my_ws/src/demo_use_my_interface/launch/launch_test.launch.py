@@ -1,5 +1,6 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import LogInfo
 
 def generate_launch_description():
     action_my_server = Node(package = "demo_use_my_interface", executable = "server")
