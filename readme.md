@@ -16,6 +16,11 @@
 
 [红绿灯识别，虽然说写的有点水哈](https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/kq13erb83414zrgg?singleDoc#) 
 
+[ROS] (https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/nr7tihhs97wnimfi?singleDoc#)
+
+[GAZEBO] (https://www.yuque.com/yuqueyonghuakgijn/xmbrbw/emsbdxl3nenrmf61?singleDoc#)
+
+
 开发系统环境`Ubuntu22.04.5` `OpenCV4.5` `ros2桌面版` `cmake 3.22.1`
 
 ## CryptoTool使用
